@@ -111,10 +111,15 @@
     <FilesToPackage Include="$(TargetPath)" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="communication.h" />
+    <ClInclude Include="data.h" />
+    <ClInclude Include="events.h" />
     <ClInclude Include="messages.h" />
     <ClInclude Include="mydriver.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="communication.c" />
+    <ClCompile Include="events.c" />
     <ClCompile Include="mydriver.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
